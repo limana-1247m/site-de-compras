@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cabeçalho */
+
+header{
+    background-color: rgba(255, 251, 251, 0.938);
+    color: #FFFF;
+    background-size: 200%; 
+    padding: 15px;
+    text-align: center; }
+
+    .logo{
+        background: linear-gradient(90deg, rgba(189,17,183,1) 0%, rgba(151,20,185,1) 35%, rgba(39,9,177,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+  
+/* Produtos */
+
+
+
+.container{
+    background-color: aliceblue;
+    min-height: 60vh;
+    padding: 50px;
+ } 
+
+
+.products-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card{
+  width: 31%;
+  display: inline-block;  
+  margin: 1% 1%;
+  padding: 15px;
+}
+
+.imagem-produto{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size:cover;
+}
+
+#img-1{
+    background-image: url("../img/headphone1.webp");
+}
+
+#img-2{
+    background-image: url("../img/headphone2.webp");
+}
+
+#img-3{
+    background-image: url("../img/headphone3.jpeg");
+}
+
+#img-4{
+    background-image: url("../img/headphone4.webp");
+}
+
+#img-5{
+    background-image: url("../img/headphone5.webp");
+}
+
+#img-6{
+    background-image: url("../img/headphone6.jpeg");
+}
+
+h3{
+    margin-bottom: 10px;
+    color: #3d0968;
+    border-left: 5px solid purple;
+    padding-left: 7px;
+    font-size: 24px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background:linear-gradient(90deg, rgba(189,17,183,1) 0%, rgba(151,20,185,1) 35%, rgba(39,9,177,1) 100%);
+    color: azure;
+    padding: 15px;
+    transition: .1s;
+    z-index: 1;
+    background-size: 200%;
+}
+
+@keyframes animation {
+    0% {background-position: 0%;}
+    100% {background-position: 400%;}
+}  
+.btn:hover{
+    animation: animation 3s linear ;
+    border: none;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(189,17,183,1) 0%, rgba(151,20,185,1) 35%, rgb(170, 46, 207) 100%);
+    background-size: 300%;
+    transition: 1s;
+}
+
+.btn:hover::before{
+    filter: blur(20px);
+}
+
+
+/* Footer */
+
+footer{
+    background-color: rgba(255, 251, 251, 0.938);
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    background: linear-gradient(90deg, rgba(189,17,183,1) 0%, rgba(151,20,185,1) 35%, rgba(39,9,177,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+}
+
+
+
